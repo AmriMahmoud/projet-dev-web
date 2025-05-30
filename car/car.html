@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details</title>
+  <link rel="stylesheet" href="car.css" />
+</head>
+<body>
+
+  <a href="/main/main.html#cars" class="back">←</a>
+
+  <div class="car-container">
+    <div class="car-image">
+      <img id="car-image" src="" alt="Car image" />
+      <div id="car-name" class="car-name">Loading...</div>
+      <div id="car-specs" class="car-specs">Specs loading...</div>
+    </div>
+    <div class="car-details">
+      <div class="price" id="daily-rate">TND / day</div>
+
+      <div class="form-group">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" />
+      </div>
+
+      <div class="form-group">
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" />
+      </div>
+
+      <div class="form-group">
+        <label for="pickup-location">Pickup Location:</label>
+        <select id="pickup-location">
+          <option value="Tunis">Tunis</option>
+          <option value="Sousse">Sousse</option>
+          <option value="Monastir">Monastir</option>
+          <option value="Djerba">Djerba</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="return-location">Return Location:</label>
+        <select id="return-location">
+          <option value="Tunis">Tunis</option>
+          <option value="Sousse">Sousse</option>
+          <option value="Monastir">Monastir</option>
+          <option value="Djerba">Djerba</option>
+        </select>
+      </div>
+
+      <div class="total" id="total">Total: TND 0</div>
+      <button class="confirm-button" onclick="showConfirmation()">Confirm Booking</button>
+    </div>
+  </div>
+  <script src="car.js"></script>
+</body>
+</html>
